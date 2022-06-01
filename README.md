@@ -15,9 +15,9 @@ Data should always be numeric, non numeric data will be automatically replaced b
 
 ## Import Options
 
-image
+<img src="fig/import_settings.jpg">
 
-the following options are available to help the importer parse the data correctly.
+The following options are available to help the importer parse the data correctly.
 - **Add Geometry Nodes Modifier:** This will automatically setup a new Geometry Node Tree for the data, with the attributes available as node inputs.
 - **Include Grid Extras:** Will search for gridded attributes in the data, and provide the grid dimensions as integer inputs to the node tree. Gridded attributes are those attributes defining a nD grid, such that the product of their sizes equals the number of data points. There should be at least 2 and at most one less than the total number of columns to be identified correctly. This functionallity is useful to quickly create primitives that fit the data for visualization.
 - **Column Names Row:** The row index (1 based) where the attribute names are. Leave at 0 if there is no row for column names.
