@@ -1,7 +1,7 @@
 # Import CSV as Attributes
 
 ## Introduction
-This add-on allows importing data in typical delimited plain text formats, such as CSV files, into Blender as geometry attributes. The data can then be further processed, for example with Geometry Nodes, to create great visualisations.
+This add-on allows importing data in typical delimited plain text formats, such as CSV files, into Blender as geometry attributes. The data can then be further processed, for example with Geometry Nodes, to create great visualisations. The add-on places a new entry in the File>Import menu.
 
 Delimited plain text files are popular formats for data distribution. Most online databases and data banks allow exporting as CSV or similar formats. Most spreadsheet tools also allow saving as delimited plain text. The exact file extension is not important, the parsing parameters can be specified manually. 
 
@@ -17,7 +17,7 @@ Data should always be numeric, non-numeric data will be automatically replaced b
 
 <img src="fig/import_settings.jpg">
 
-The following options are available to help the importer parse the data correctly.
+The following options are availabe in the file browser when selecting the file.
 - **Add Geometry Nodes Modifier:** This will automatically setup a new Geometry Node Tree for the data, with the attributes available as node inputs.
 - **Include Grid Extras:** Will search for gridded attributes in the data, and provide the grid dimensions as integer inputs to the node tree. Gridded attributes are those attributes defining a nD grid, such that the product of their sizes equals the number of data points. There should be at least 2 and at most one less than the total number of columns to be identified correctly. This functionality is useful to quickly create primitives that fit the data for visualization.
 - **Column Names Row:** The row index (1 based) where the attribute names are. Leave at 0 if there is no row for column names.
